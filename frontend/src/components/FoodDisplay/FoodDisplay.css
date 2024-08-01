@@ -8,7 +8,7 @@
     font-weight: 600;
 }
 
-.food-display-list {  /** grid System */
+.food-display-list {  /* * look grid System */
 
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
