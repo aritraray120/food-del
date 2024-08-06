@@ -12,9 +12,12 @@ function App() {
 
   const [showLogin, setShowLogin] = useState(false);
 
+  //! Who is the parent of who?
+  
   return (
     <>
     {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
+
       <div className='app'>
 
         <Navbar setShowLogin={setShowLogin} />
