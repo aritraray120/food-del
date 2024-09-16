@@ -12,7 +12,7 @@ function App() {
 
   const [showLogin, setShowLogin] = useState(false);
 
-  //! Who is the parent of who?
+  /* Who is the parent of who? */
   
   return (
     <>
