@@ -1,4 +1,4 @@
-import foodModel from "../models/foodModel";
+import foodModel from "../models/foodModel.js";
 import fs from 'fs';
 
 
@@ -20,9 +20,10 @@ const addFood = async (req, res) => {
 
     try {
         await food.save();
-        res.json({success: true, message: "Food Added"})
+        res.json({success: true, message: "Food Added"});
     } catch (error) {
-        console.log()
+        console.log(error);
+        res.json({success: false, message: "Error"});
     }
 
 }
