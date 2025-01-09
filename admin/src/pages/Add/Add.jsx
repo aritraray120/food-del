@@ -4,9 +4,9 @@ import { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-function Add() {
+function Add({url}) {
 
-    const url = "http://localhost:4000";
+    
 
     const [image, setImage] = useState(false);
     const [data, setData] = useState({
